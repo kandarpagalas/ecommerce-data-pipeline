@@ -34,5 +34,5 @@ if __name__ == "__main__":
 
             products.append(data)
 
-    with open("src/helpers/data/products.json", "w", encoding="utf-8") as f:
+    with open("src/data/products.json", "w", encoding="utf-8") as f:
             f.write(json.dumps(products, indent=4))

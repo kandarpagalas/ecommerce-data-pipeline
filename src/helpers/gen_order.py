@@ -68,7 +68,7 @@ def gen_payment_method(customer):
     return payment_methods["PIX"]
 
 def get_randon_customer():
-    with open("src/helpers/data/customers.json", "r", encoding="utf-8") as f:
+    with open("src/data/customers.json", "r", encoding="utf-8") as f:
         data = f.read()
         customers = json.loads(data)
 
@@ -77,7 +77,7 @@ def get_randon_customer():
         return the_chosen_one
     
 def get_random_product():
-    with open("src/helpers/data/products.json", "r", encoding="utf-8") as f:
+    with open("src/data/products.json", "r", encoding="utf-8") as f:
         data = f.read()
         products = json.loads(data)
 
