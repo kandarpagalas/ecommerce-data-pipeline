@@ -1,0 +1,1202 @@
+[
+    {
+        "id": "CID_77322b65-fb44-446c-8fcd-fbf71d150d0a",
+        "created_at": "2024-01-27",
+        "name": "Elisa Pacheco",
+        "email": "elisa.pacheco@exemple.com",
+        "tax_id": "382.710.694-03",
+        "address": {
+            "street": "Aeroporto de Borges",
+            "number": "80",
+            "complement": "",
+            "locality": "Padre Eust\u00e1quio",
+            "city": "Borges de Barros",
+            "region_code": "MT",
+            "country": "BRA",
+            "postal_code": "35139-332"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "71960487647",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_ea8cd53f-c02f-408e-b316-03d350dab308",
+        "created_at": "2024-06-06",
+        "name": "Valentina Costela",
+        "email": "valentina.costela@exemple.com",
+        "tax_id": "984.307.615-00",
+        "address": {
+            "street": "Esta\u00e7\u00e3o Andrade",
+            "number": "247",
+            "complement": "apto 1105",
+            "locality": "Brasil Industrial",
+            "city": "Cunha",
+            "region_code": "RO",
+            "country": "BRA",
+            "postal_code": "20186848"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "84971484185",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_043bd699-82f3-4116-8eac-3896307ded58",
+        "created_at": "2022-07-19",
+        "name": "Igor Mendon\u00e7a",
+        "email": "igor.mendon\u00e7a@exemple.com",
+        "tax_id": "538.092.647-92",
+        "address": {
+            "street": "Loteamento Lima",
+            "number": "2",
+            "complement": "apto 1401",
+            "locality": "Vila Sat\u00e9lite",
+            "city": "Pereira",
+            "region_code": "TO",
+            "country": "BRA",
+            "postal_code": "30989101"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "71994775159",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_d9a65e7f-441d-4b06-a347-04af75119ec6",
+        "created_at": "2020-03-25",
+        "name": "L\u00e9o Silva",
+        "email": "l\u00e9o.silva@exemple.com",
+        "tax_id": "308.496.715-66",
+        "address": {
+            "street": "Favela de Vargas",
+            "number": "3",
+            "complement": "",
+            "locality": "Bandeirantes",
+            "city": "Rodrigues de Jesus",
+            "region_code": "RJ",
+            "country": "BRA",
+            "postal_code": "58419720"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "21961510903",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_4e6ba3cd-8569-4f42-b970-4a10ace38b04",
+        "created_at": "2023-04-23",
+        "name": "Emanuel Farias",
+        "email": "emanuel.farias@exemple.com",
+        "tax_id": "842.137.956-91",
+        "address": {
+            "street": "Parque Kamilly Rezende",
+            "number": "1",
+            "complement": "",
+            "locality": "Unidas",
+            "city": "Guerra",
+            "region_code": "RR",
+            "country": "BRA",
+            "postal_code": "52337696"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "84945642807",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_36f393f3-6afe-442c-af4e-ee9c63a4741f",
+        "created_at": "2022-08-19",
+        "name": "Mariah Novais",
+        "email": "mariah.novais@exemple.com",
+        "tax_id": "097.263.814-87",
+        "address": {
+            "street": "Conjunto de Albuquerque",
+            "number": "66",
+            "complement": "",
+            "locality": "Acaba Mundo",
+            "city": "da Rosa",
+            "region_code": "GO",
+            "country": "BRA",
+            "postal_code": "00891319"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "71902714278",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_a0968e80-f110-4303-8722-f676008fc0a9",
+        "created_at": "2022-11-18",
+        "name": "Th\u00e9o Carvalho",
+        "email": "th\u00e9o.carvalho@exemple.com",
+        "tax_id": "512.709.438-04",
+        "address": {
+            "street": "\u00c1rea de Souza",
+            "number": "777",
+            "complement": "",
+            "locality": "Marmiteiros",
+            "city": "Fernandes da Praia",
+            "region_code": "RR",
+            "country": "BRA",
+            "postal_code": "36940224"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "31917610471",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_e6bd2a21-ce31-4c9e-a750-c960b34b483e",
+        "created_at": "2021-08-02",
+        "name": "Amanda Fonseca",
+        "email": "amanda.fonseca@exemple.com",
+        "tax_id": "824.031.675-17",
+        "address": {
+            "street": "Loteamento Ana Clara Le\u00e3o",
+            "number": "2",
+            "complement": "apto 701",
+            "locality": "Serra Do Curral",
+            "city": "da Rosa",
+            "region_code": "MT",
+            "country": "BRA",
+            "postal_code": "75517-176"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "21959004229",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_a24f4092-6237-4c6d-8d28-d6208afdcefa",
+        "created_at": "2019-08-26",
+        "name": "Davi Gomes",
+        "email": "davi.gomes@exemple.com",
+        "tax_id": "684.397.150-48",
+        "address": {
+            "street": "Trecho Lucas Gabriel Lopes",
+            "number": "25",
+            "complement": "apto 1905",
+            "locality": "Bela Vitoria",
+            "city": "Cunha",
+            "region_code": "RN",
+            "country": "BRA",
+            "postal_code": "87317643"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "31929611133",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_a7aa19a4-71ab-40c3-8505-2e5facfc0562",
+        "created_at": "2022-06-07",
+        "name": "Mariah Casa Grande",
+        "email": "mariah.casa-grande@exemple.com",
+        "tax_id": "687.523.490-47",
+        "address": {
+            "street": "\u00c1rea da Rosa",
+            "number": "8",
+            "complement": "",
+            "locality": "Lind\u00e9ia",
+            "city": "Rocha",
+            "region_code": "SE",
+            "country": "BRA",
+            "postal_code": "27586880"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "31913765821",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_92eb5cdd-2710-439b-a455-f0cf4ac8c77f",
+        "created_at": "2024-06-22",
+        "name": "Maria Lu\u00edsa Vieira",
+        "email": "maria-lu\u00edsa.vieira@exemple.com",
+        "tax_id": "930.571.284-32",
+        "address": {
+            "street": "Ch\u00e1cara de Rocha",
+            "number": "75",
+            "complement": "",
+            "locality": "Aparecida 7\u00aa Se\u00e7\u00e3o",
+            "city": "Pires",
+            "region_code": "MT",
+            "country": "BRA",
+            "postal_code": "67017-200"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "84991634896",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_dbd6a812-bd28-48f3-9703-4a708fa86b1f",
+        "created_at": "2022-10-10",
+        "name": "Maria Helena Pimenta",
+        "email": "maria-helena.pimenta@exemple.com",
+        "tax_id": "514.683.270-62",
+        "address": {
+            "street": "Condom\u00ednio Jo\u00e3o Vitor Lima",
+            "number": "261",
+            "complement": "",
+            "locality": "Nova Esperan\u00e7a",
+            "city": "Duarte de Silveira",
+            "region_code": "GO",
+            "country": "BRA",
+            "postal_code": "16207660"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "21985367109",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_7b92ed6e-a295-4660-81ec-f791c43dab55",
+        "created_at": "2023-09-16",
+        "name": "Ant\u00f4nio da Concei\u00e7\u00e3o",
+        "email": "ant\u00f4nio.da-concei\u00e7\u00e3o@exemple.com",
+        "tax_id": "123.096.458-42",
+        "address": {
+            "street": "Distrito Cirino",
+            "number": "81",
+            "complement": "apto 1505",
+            "locality": "Mantiqueira",
+            "city": "Cirino Verde",
+            "region_code": "AP",
+            "country": "BRA",
+            "postal_code": "20355-744"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "21951150552",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_2b264738-bfaa-4851-9aee-3e867ccef4eb",
+        "created_at": "2020-10-28",
+        "name": "Ana Vit\u00f3ria Moraes",
+        "email": "ana-vit\u00f3ria.moraes@exemple.com",
+        "tax_id": "245.370.198-32",
+        "address": {
+            "street": "Avenida de Garcia",
+            "number": "70",
+            "complement": "",
+            "locality": "Vila Oeste",
+            "city": "Camargo da Prata",
+            "region_code": "RN",
+            "country": "BRA",
+            "postal_code": "73547-121"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "21989426223",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_a0c61d55-c4d1-48f7-94dc-4f3d960fec4b",
+        "created_at": "2020-04-28",
+        "name": "Carolina Moreira",
+        "email": "carolina.moreira@exemple.com",
+        "tax_id": "719.682.045-20",
+        "address": {
+            "street": "Aeroporto da Cunha",
+            "number": "78",
+            "complement": "apto 1403",
+            "locality": "Para\u00edso",
+            "city": "das Neves da Prata",
+            "region_code": "MT",
+            "country": "BRA",
+            "postal_code": "45439101"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "31976266237",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_2ab9894c-40ca-49b4-8835-2ca2ca408c00",
+        "created_at": "2022-03-24",
+        "name": "Jo\u00e3o Felipe Oliveira",
+        "email": "jo\u00e3o-felipe.oliveira@exemple.com",
+        "tax_id": "381.954.627-82",
+        "address": {
+            "street": "Travessa Jo\u00e3o Guilherme Castro",
+            "number": "2",
+            "complement": "apto 206",
+            "locality": "Mineir\u00e3o",
+            "city": "Mendes",
+            "region_code": "PR",
+            "country": "BRA",
+            "postal_code": "97284-576"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "21983216448",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_2f1b2b10-b74f-4b00-91d0-290dfbd75d27",
+        "created_at": "2021-05-22",
+        "name": "Pedro Alves",
+        "email": "pedro.alves@exemple.com",
+        "tax_id": "601.583.974-01",
+        "address": {
+            "street": "Ladeira Porto",
+            "number": "33",
+            "complement": "apto 1603",
+            "locality": "Vila Real 1\u00aa Se\u00e7\u00e3o",
+            "city": "Ramos das Pedras",
+            "region_code": "BA",
+            "country": "BRA",
+            "postal_code": "31675-625"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "84957074270",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_54f55b0e-2880-4a68-b08f-fb61da49e190",
+        "created_at": "2023-08-25",
+        "name": "Heloisa Lima",
+        "email": "heloisa.lima@exemple.com",
+        "tax_id": "638.714.059-57",
+        "address": {
+            "street": "Esta\u00e7\u00e3o Fonseca",
+            "number": "3",
+            "complement": "apto 1201",
+            "locality": "Flavio De Oliveira",
+            "city": "Pacheco dos Dourados",
+            "region_code": "PR",
+            "country": "BRA",
+            "postal_code": "91845-670"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "81928523275",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_9f6d3cf7-aea3-4b40-b39e-cde1640d153c",
+        "created_at": "2021-01-22",
+        "name": "Clara Abreu",
+        "email": "clara.abreu@exemple.com",
+        "tax_id": "021.637.589-40",
+        "address": {
+            "street": "Trevo Gustavo Pereira",
+            "number": "6",
+            "complement": "apto 505",
+            "locality": "Laranjeiras",
+            "city": "Moura",
+            "region_code": "MS",
+            "country": "BRA",
+            "postal_code": "54080-351"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "51973540002",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_5ff0985a-cb49-4e11-8a87-a9e6b7b30839",
+        "created_at": "2020-10-23",
+        "name": "Catarina Silva",
+        "email": "catarina.silva@exemple.com",
+        "tax_id": "481.035.967-01",
+        "address": {
+            "street": "Condom\u00ednio Enzo Gabriel Barros",
+            "number": "31",
+            "complement": "apto 1205",
+            "locality": "Nova Cintra",
+            "city": "Mendon\u00e7a",
+            "region_code": "ES",
+            "country": "BRA",
+            "postal_code": "79168602"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "41934448647",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_15c89328-d811-44bd-b3bf-2f7d7d762f82",
+        "created_at": "2020-08-13",
+        "name": "Vit\u00f3ria Viana",
+        "email": "vit\u00f3ria.viana@exemple.com",
+        "tax_id": "478.952.603-83",
+        "address": {
+            "street": "Col\u00f4nia de Cavalcanti",
+            "number": "43",
+            "complement": "",
+            "locality": "Jardim Alvorada",
+            "city": "da Concei\u00e7\u00e3o da Prata",
+            "region_code": "RO",
+            "country": "BRA",
+            "postal_code": "88601641"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "31945561849",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_0af858f3-5b04-47ed-9a46-e34490fadc7a",
+        "created_at": "2022-07-10",
+        "name": "Maria Luiza da Paz",
+        "email": "maria-luiza.da-paz@exemple.com",
+        "tax_id": "205.948.137-60",
+        "address": {
+            "street": "Conjunto Teixeira",
+            "number": "47",
+            "complement": "apto 404",
+            "locality": "Flavio Marques Lisboa",
+            "city": "Moura",
+            "region_code": "RN",
+            "country": "BRA",
+            "postal_code": "36599271"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "51933184535",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_6675940d-e828-4091-9d8e-b144fda65fe9",
+        "created_at": "2021-03-07",
+        "name": "Maria Lu\u00edsa Nogueira",
+        "email": "maria-lu\u00edsa.nogueira@exemple.com",
+        "tax_id": "142.839.765-55",
+        "address": {
+            "street": "Largo Silveira",
+            "number": "85",
+            "complement": "apto 806",
+            "locality": "Vila Fumec",
+            "city": "Siqueira",
+            "region_code": "RS",
+            "country": "BRA",
+            "postal_code": "45240598"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "61977403827",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_a602b36f-5478-4665-bfd1-be4a2a142bea",
+        "created_at": "2021-03-30",
+        "name": "Rael Rezende",
+        "email": "rael.rezende@exemple.com",
+        "tax_id": "056.173.498-48",
+        "address": {
+            "street": "Loteamento de Siqueira",
+            "number": "16",
+            "complement": "",
+            "locality": "Nova America",
+            "city": "Abreu",
+            "region_code": "PE",
+            "country": "BRA",
+            "postal_code": "88709-166"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "31950700300",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_01f74f65-b32d-4c49-bcbe-81658a311946",
+        "created_at": "2023-04-30",
+        "name": "Augusto Cavalcante",
+        "email": "augusto.cavalcante@exemple.com",
+        "tax_id": "821.340.695-89",
+        "address": {
+            "street": "Parque Benjamim Pires",
+            "number": "8",
+            "complement": "apto 806",
+            "locality": "Brasil Industrial",
+            "city": "da Mata do Amparo",
+            "region_code": "MG",
+            "country": "BRA",
+            "postal_code": "42738-526"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "31998215323",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_aa5b602b-1ea6-4bf3-8dbd-105e2c14cce1",
+        "created_at": "2019-10-20",
+        "name": "Vinicius Rodrigues",
+        "email": "vinicius.rodrigues@exemple.com",
+        "tax_id": "619.230.485-89",
+        "address": {
+            "street": "Trecho de Sampaio",
+            "number": "93",
+            "complement": "",
+            "locality": "S\u00e3o Bernardo",
+            "city": "Castro Grande",
+            "region_code": "MT",
+            "country": "BRA",
+            "postal_code": "64319-539"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "11948487089",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_4a0a90f1-51bc-45dc-8557-db82a4054f47",
+        "created_at": "2023-07-12",
+        "name": "Ayla Monteiro",
+        "email": "ayla.monteiro@exemple.com",
+        "tax_id": "962.014.853-33",
+        "address": {
+            "street": "Rodovia Pires",
+            "number": "796",
+            "complement": "apto 1403",
+            "locality": "Horto Florestal",
+            "city": "Fernandes do Oeste",
+            "region_code": "RR",
+            "country": "BRA",
+            "postal_code": "40644-888"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "11990925544",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_efa5133c-8bfc-44ea-a41b-d07c0e5ed407",
+        "created_at": "2024-03-05",
+        "name": "Brayan Novais",
+        "email": "brayan.novais@exemple.com",
+        "tax_id": "930.241.568-60",
+        "address": {
+            "street": "Vereda de Rocha",
+            "number": "80",
+            "complement": "",
+            "locality": "Maria Helena",
+            "city": "Barros",
+            "region_code": "RJ",
+            "country": "BRA",
+            "postal_code": "94506782"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "71920829657",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_5587a2da-0107-4ff2-8c90-66b96c820d70",
+        "created_at": "2021-03-09",
+        "name": "Ana Vit\u00f3ria Alves",
+        "email": "ana-vit\u00f3ria.alves@exemple.com",
+        "tax_id": "246.518.739-28",
+        "address": {
+            "street": "Conjunto Mendes",
+            "number": "9",
+            "complement": "apto 706",
+            "locality": "Atila De Paiva",
+            "city": "da Luz",
+            "region_code": "MT",
+            "country": "BRA",
+            "postal_code": "25911-824"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "61950131870",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_67af57a2-1490-4c53-9470-4e96a6296b82",
+        "created_at": "2022-03-04",
+        "name": "Luiz Gustavo Ramos",
+        "email": "luiz-gustavo.ramos@exemple.com",
+        "tax_id": "513.974.860-66",
+        "address": {
+            "street": "Recanto Vargas",
+            "number": "208",
+            "complement": "apto 104",
+            "locality": "Estoril",
+            "city": "Garcia do Galho",
+            "region_code": "MS",
+            "country": "BRA",
+            "postal_code": "01169-597"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "51948727820",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_1b07183a-7d49-4106-a230-acd5dd51cfaa",
+        "created_at": "2021-09-06",
+        "name": "Matheus Aparecida",
+        "email": "matheus.aparecida@exemple.com",
+        "tax_id": "046.981.275-30",
+        "address": {
+            "street": "Trevo Thomas Rocha",
+            "number": "89",
+            "complement": "apto 1902",
+            "locality": "Nova Cintra",
+            "city": "Alves",
+            "region_code": "MS",
+            "country": "BRA",
+            "postal_code": "07436151"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "21925022059",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_007ecaf8-eb14-402c-afcc-b5ff22fb9963",
+        "created_at": "2023-11-26",
+        "name": "Maria Laura Barros",
+        "email": "maria-laura.barros@exemple.com",
+        "tax_id": "864.057.931-84",
+        "address": {
+            "street": "Alameda Maria Sophia Pires",
+            "number": "40",
+            "complement": "",
+            "locality": "Gameleira",
+            "city": "Nunes Grande",
+            "region_code": "MG",
+            "country": "BRA",
+            "postal_code": "52353-267"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "11926905787",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_10c62847-9913-443c-b5a7-95ed695b81b2",
+        "created_at": "2019-08-18",
+        "name": "Ayla Moraes",
+        "email": "ayla.moraes@exemple.com",
+        "tax_id": "012.683.957-30",
+        "address": {
+            "street": "Conjunto Fonseca",
+            "number": "738",
+            "complement": "apto 1101",
+            "locality": "Boa Esperan\u00e7a",
+            "city": "C\u00e2mara das Flores",
+            "region_code": "ES",
+            "country": "BRA",
+            "postal_code": "69516637"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "11929062200",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_ec1f4caa-e6bc-4d2d-aa5e-a7a06dbfc568",
+        "created_at": "2022-09-02",
+        "name": "Augusto Pereira",
+        "email": "augusto.pereira@exemple.com",
+        "tax_id": "734.092.856-10",
+        "address": {
+            "street": "Passarela de Alves",
+            "number": "76",
+            "complement": "apto 504",
+            "locality": "Nova Vista",
+            "city": "Pastor",
+            "region_code": "MA",
+            "country": "BRA",
+            "postal_code": "79722576"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "81969144858",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_62e891d5-6ca0-4efd-a683-e08bc8474e7e",
+        "created_at": "2020-06-30",
+        "name": "Matteo da Cunha",
+        "email": "matteo.da-cunha@exemple.com",
+        "tax_id": "954.380.261-06",
+        "address": {
+            "street": "Ladeira Fernanda Siqueira",
+            "number": "35",
+            "complement": "",
+            "locality": "C\u00e9u Azul",
+            "city": "Ramos",
+            "region_code": "RR",
+            "country": "BRA",
+            "postal_code": "95206967"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "84915525780",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_0856b743-7136-4882-9a74-b32bebca57ea",
+        "created_at": "2022-03-28",
+        "name": "Rafael Alves",
+        "email": "rafael.alves@exemple.com",
+        "tax_id": "754.820.319-50",
+        "address": {
+            "street": "Loteamento de Nascimento",
+            "number": "96",
+            "complement": "apto 1304",
+            "locality": "Jatob\u00e1",
+            "city": "Rodrigues",
+            "region_code": "BA",
+            "country": "BRA",
+            "postal_code": "65678466"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "21968822232",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_f35c3f27-16de-4729-9381-226325ed6a7b",
+        "created_at": "2020-12-11",
+        "name": "Olivia Camargo",
+        "email": "olivia.camargo@exemple.com",
+        "tax_id": "926.075.418-67",
+        "address": {
+            "street": "Favela de Macedo",
+            "number": "14",
+            "complement": "apto 1705",
+            "locality": "T\u00fanel De Ibirit\u00e9",
+            "city": "Farias de Goi\u00e1s",
+            "region_code": "PE",
+            "country": "BRA",
+            "postal_code": "62790619"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "31909981399",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_44b92be4-f642-4f43-b8e3-7c1e3f386dd2",
+        "created_at": "2020-12-08",
+        "name": "Isabel Melo",
+        "email": "isabel.melo@exemple.com",
+        "tax_id": "385.124.690-05",
+        "address": {
+            "street": "Travessa Julia Novais",
+            "number": "5",
+            "complement": "apto 202",
+            "locality": "Rio Branco",
+            "city": "Abreu",
+            "region_code": "AL",
+            "country": "BRA",
+            "postal_code": "14251202"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "81907914878",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_8d7878ff-d3fe-4935-a0c8-2b9c3fad85a6",
+        "created_at": "2019-08-21",
+        "name": "Gael Rodrigues",
+        "email": "gael.rodrigues@exemple.com",
+        "tax_id": "374.210.956-16",
+        "address": {
+            "street": "Rodovia Maria Julia da Concei\u00e7\u00e3o",
+            "number": "75",
+            "complement": "",
+            "locality": "Itatiaia",
+            "city": "da Cruz da Serra",
+            "region_code": "MT",
+            "country": "BRA",
+            "postal_code": "64174-172"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "71989717855",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_51b60445-478a-4cd4-92ed-0372b244a4fb",
+        "created_at": "2021-08-10",
+        "name": "Pedro Lucas Rocha",
+        "email": "pedro-lucas.rocha@exemple.com",
+        "tax_id": "473.290.516-16",
+        "address": {
+            "street": "Avenida Bruno Jesus",
+            "number": "5",
+            "complement": "",
+            "locality": "Dom Bosco",
+            "city": "Nascimento do Sul",
+            "region_code": "BA",
+            "country": "BRA",
+            "postal_code": "21250-300"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "81931667879",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_21d5092f-bdfd-4807-8cb7-509b4152b3f6",
+        "created_at": "2022-04-18",
+        "name": "Kamilly Azevedo",
+        "email": "kamilly.azevedo@exemple.com",
+        "tax_id": "396.870.541-66",
+        "address": {
+            "street": "Alameda Cecilia Santos",
+            "number": "85",
+            "complement": "",
+            "locality": "Vila Copacabana",
+            "city": "Pinto",
+            "region_code": "SP",
+            "country": "BRA",
+            "postal_code": "98141140"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "21999317308",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_bccc7c80-628b-4681-82fc-a4eb721de479",
+        "created_at": "2020-02-20",
+        "name": "Isaque Novais",
+        "email": "isaque.novais@exemple.com",
+        "tax_id": "719.386.205-77",
+        "address": {
+            "street": "Travessa Montenegro",
+            "number": "83",
+            "complement": "apto 1204",
+            "locality": "Gra\u00e7a",
+            "city": "Lima",
+            "region_code": "ES",
+            "country": "BRA",
+            "postal_code": "76070-867"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "31963953688",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_09d30c02-c4d6-440d-9cf0-d1c9b547875c",
+        "created_at": "2023-01-13",
+        "name": "Kaique Moreira",
+        "email": "kaique.moreira@exemple.com",
+        "tax_id": "341.072.659-43",
+        "address": {
+            "street": "Estrada de Jesus",
+            "number": "33",
+            "complement": "apto 1302",
+            "locality": "Monte Azul",
+            "city": "Cassiano do Amparo",
+            "region_code": "RO",
+            "country": "BRA",
+            "postal_code": "58352889"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "51977237457",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_39cf66db-60e5-450a-9fff-51675c6952df",
+        "created_at": "2019-10-30",
+        "name": "Matteo Abreu",
+        "email": "matteo.abreu@exemple.com",
+        "tax_id": "237.654.190-52",
+        "address": {
+            "street": "Lago de Rodrigues",
+            "number": "47",
+            "complement": "",
+            "locality": "Conjunto Jardim Filad\u00e9lfia",
+            "city": "C\u00e2mara",
+            "region_code": "SP",
+            "country": "BRA",
+            "postal_code": "85767-571"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "41997037958",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_44c24903-e8c8-4e35-92d6-2756f3f30c76",
+        "created_at": "2020-01-18",
+        "name": "Jade Costela",
+        "email": "jade.costela@exemple.com",
+        "tax_id": "693.501.742-43",
+        "address": {
+            "street": "Jardim Henry Pastor",
+            "number": "44",
+            "complement": "",
+            "locality": "Mineir\u00e3o",
+            "city": "Pires Verde",
+            "region_code": "RJ",
+            "country": "BRA",
+            "postal_code": "85394-102"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "21926783500",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_445c5a9a-9f18-457f-8495-351bcc76b7c3",
+        "created_at": "2022-12-07",
+        "name": "Luara Pereira",
+        "email": "luara.pereira@exemple.com",
+        "tax_id": "290.753.164-61",
+        "address": {
+            "street": "Morro da Rocha",
+            "number": "49",
+            "complement": "",
+            "locality": "Vila Piratininga Venda Nova",
+            "city": "Carvalho da Praia",
+            "region_code": "AM",
+            "country": "BRA",
+            "postal_code": "58802704"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "81918765601",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_fd527cf2-06fc-4012-8e67-fbd35b9d2059",
+        "created_at": "2019-10-14",
+        "name": "Jos\u00e9 Miguel Mendon\u00e7a",
+        "email": "jos\u00e9-miguel.mendon\u00e7a@exemple.com",
+        "tax_id": "351.487.620-71",
+        "address": {
+            "street": "Vila de Souza",
+            "number": "35",
+            "complement": "apto 203",
+            "locality": "Inconfid\u00eancia",
+            "city": "Barros",
+            "region_code": "RO",
+            "country": "BRA",
+            "postal_code": "83375-248"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "84961491819",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_ce89a689-3871-4744-a63f-5da0daf670f3",
+        "created_at": "2020-12-26",
+        "name": "Lucas Gabriel Silva",
+        "email": "lucas-gabriel.silva@exemple.com",
+        "tax_id": "385.690.721-12",
+        "address": {
+            "street": "Pra\u00e7a Freitas",
+            "number": "18",
+            "complement": "",
+            "locality": "Flamengo",
+            "city": "Albuquerque de S\u00e1",
+            "region_code": "MS",
+            "country": "BRA",
+            "postal_code": "60314-122"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "61945019041",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_94543e78-fa89-4e3f-9989-620aebd1d409",
+        "created_at": "2023-02-06",
+        "name": "Lorena Melo",
+        "email": "lorena.melo@exemple.com",
+        "tax_id": "025.167.439-80",
+        "address": {
+            "street": "Setor Benjamim Cirino",
+            "number": "36",
+            "complement": "",
+            "locality": "Gar\u00e7as",
+            "city": "Jesus",
+            "region_code": "CE",
+            "country": "BRA",
+            "postal_code": "92384073"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "84961837446",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    {
+        "id": "CID_7ec97a89-7c43-4be7-bc76-11ea9455ed2b",
+        "created_at": "2022-04-11",
+        "name": "Jos\u00e9 Borges",
+        "email": "jos\u00e9.borges@exemple.com",
+        "tax_id": "103.576.294-34",
+        "address": {
+            "street": "Campo de Teixeira",
+            "number": "49",
+            "complement": "apto 106",
+            "locality": "Vila Pinho",
+            "city": "Albuquerque Grande",
+            "region_code": "MS",
+            "country": "BRA",
+            "postal_code": "00817372"
+        },
+        "phones": [
+            {
+                "country": "+55",
+                "area": "71986368871",
+                "type": "MOBILE"
+            }
+        ]
+    }
+]

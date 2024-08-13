@@ -1,0 +1,82 @@
+{
+    "id": "ORDE_244834e9-23f3-45db-a478-5794ff654c76",
+    "reference_id": "re_ef5e9930-226c-43e5-9f8c-09b206d5c2dc",
+    "created_at": "2024-02-21 09:35:43-03:00",
+    "shipping": {
+        "street": "Loteamento Ana Clara Le\u00e3o",
+        "number": "2",
+        "complement": "apto 701",
+        "locality": "Serra Do Curral",
+        "city": "da Rosa",
+        "region_code": "MT",
+        "country": "BRA",
+        "postal_code": "75517-176"
+    },
+    "items": [
+        {
+            "name": "Short Soltinho Caipirinha",
+            "categoria": "short",
+            "reference_id": "SH02-CAIPNH",
+            "unit_price": 108.9,
+            "quantity": 1
+        },
+        {
+            "name": "Short Moderninho Mar",
+            "categoria": "colecao-brasilidades",
+            "reference_id": "SH04-MAR",
+            "unit_price": 112.9,
+            "quantity": 1
+        },
+        {
+            "name": "Short Moderninho Bossa",
+            "categoria": "short",
+            "reference_id": "SH04-BOSSA",
+            "unit_price": 112.9,
+            "quantity": 1
+        }
+    ],
+    "customer": {
+        "id": "CID_e6bd2a21-ce31-4c9e-a750-c960b34b483e",
+        "created_at": "2021-08-02",
+        "name": "Amanda Fonseca",
+        "email": "amanda.fonseca@exemple.com",
+        "tax_id": "824.031.675-17",
+        "phones": [
+            {
+                "country": "+55",
+                "area": "21959004229",
+                "type": "MOBILE"
+            }
+        ]
+    },
+    "charges": [
+        {
+            "id": "CHAR_b822849f-7648-43f1-9e05-c770f548ce97",
+            "reference_id": "referencia da cobranca",
+            "status": "PAID",
+            "created_at": "2024-02-21 09:35:43-03:00",
+            "paid_at": "2024-02-21 09:41:35-03:00",
+            "description": "descricao da cobranca",
+            "amount": {
+                "value": 334.70000000000005,
+                "currency": "BRL",
+                "summary": {
+                    "total": 334.70000000000005,
+                    "paid": 334.70000000000005,
+                    "refunded": 0
+                }
+            },
+            "payment_method": {
+                "type": "PIX",
+                "pix": {
+                    "notification_id": "NTF_5f4fa23c-ee9c-4311-99c6-2a9c2839cf87",
+                    "end_to_end_id": "69904668ec7e4f2a8aa6b545165f05ea",
+                    "holder": {
+                        "name": "Amanda Fonseca",
+                        "tax_id": "***031675**"
+                    }
+                }
+            }
+        }
+    ]
+}

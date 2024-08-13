@@ -1,0 +1,908 @@
+[
+    {
+        "name": "Cropped Mar",
+        "categoria": "cropped",
+        "reference_id": "GQ6Z22YGT",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Top Z106 Caipirinha com regulador de al\u00e7a",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "TP01-CAIPNH",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Short Moderninho Bossa",
+        "categoria": "short",
+        "reference_id": "SH04-BOSSA",
+        "unit_price": 112.9
+    },
+    {
+        "name": "Top Z106 Brisa",
+        "categoria": "top",
+        "reference_id": "69X4JXZRX",
+        "unit_price": 58.9
+    },
+    {
+        "name": "Top Liberdade Brilho Tropical",
+        "categoria": "top",
+        "reference_id": "TP04-BRILHOTRP",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Short Levinho Mar",
+        "categoria": "colecao-luz-e-mar",
+        "reference_id": "TKKBUQHEK",
+        "unit_price": 98.9
+    },
+    {
+        "name": "Macaquinho \u2060Tangerina",
+        "categoria": "macaquinho",
+        "reference_id": "MC01-TNG",
+        "unit_price": 157.6
+    },
+    {
+        "name": "Top Alcinhas Divertidas Estrela do Mar",
+        "categoria": "top",
+        "reference_id": "DM8LG5X2R",
+        "unit_price": 84.9
+    },
+    {
+        "name": "Top Glamour \u2060Chiclete",
+        "categoria": "top",
+        "reference_id": "TP06-CHCT",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Top Aguenta Firme \u2060Uva",
+        "categoria": "top",
+        "reference_id": "TP05-UVA",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Short Soltinho Flores Marinhas",
+        "categoria": "short",
+        "reference_id": "Z5Y2CPVL9",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Top Z106 Bossa com regulador de al\u00e7a",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "TP01-BOSSA",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Top Z106 \u2060Pedacinho Do C\u00e9u com Regulador de Al\u00e7a",
+        "categoria": "top",
+        "reference_id": "TP01-PEDCEU",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Top Glamour \u2060Mar",
+        "categoria": "top",
+        "reference_id": "TP06-MAR",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Legging com Bolso Flocos",
+        "categoria": "colecao-equilibrio",
+        "reference_id": "LG03-FLOCOS",
+        "unit_price": 145.9
+    },
+    {
+        "name": "Top Retr\u00f4 Florescer",
+        "categoria": "sale",
+        "reference_id": "E5HKATFSS",
+        "unit_price": 76.9
+    },
+    {
+        "name": "Top Z106 \u2060Castanha com Regulador de Al\u00e7a",
+        "categoria": "top",
+        "reference_id": "TP01-CAST",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Short Lim\u00e3o Verde Neon",
+        "categoria": "short",
+        "reference_id": "WQN6FX4E9",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Top Z106 Mar",
+        "categoria": "sale",
+        "reference_id": "64D4JCF7S",
+        "unit_price": 58.9
+    },
+    {
+        "name": "Top Glamour \u2060Brisa",
+        "categoria": "colecao-equilibrio",
+        "reference_id": "TP06-BRISA",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Top Z106 Bossa com regulador de al\u00e7a",
+        "categoria": "top",
+        "reference_id": "TP01-BOSSA",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Short Moderninho Brisa",
+        "categoria": "short",
+        "reference_id": "SH04-BRISA",
+        "unit_price": 112.9
+    },
+    {
+        "name": "Legging com Bolso \u2060Uva",
+        "categoria": "legging",
+        "reference_id": "LG03-UVA",
+        "unit_price": 145.9
+    },
+    {
+        "name": "Legging Jasmim Verde \u00c1gua",
+        "categoria": "sale",
+        "reference_id": "UJUPTWGMD",
+        "unit_price": 94.9
+    },
+    {
+        "name": "Short Soltinho \u2060Tangerina",
+        "categoria": "colecao-equilibrio",
+        "reference_id": "SH02-TNG",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Top Z106 Mar",
+        "categoria": "colecao-luz-e-mar",
+        "reference_id": "64D4JCF7S",
+        "unit_price": 58.9
+    },
+    {
+        "name": "Top Liberdade C\u00e9u e Mar",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "TP04-CEUMAR",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Top Z106 Mandacaru com regulador de al\u00e7a",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "TP01-MANDACARU",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Legging Lisa Bossa",
+        "categoria": "legging",
+        "reference_id": "LG02-BOSSA",
+        "unit_price": 134.9
+    },
+    {
+        "name": "Short de Listrinha Amanhecer",
+        "categoria": "sale",
+        "reference_id": "YVSNCFHAG",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Short de Listrinha Merge e Rosa",
+        "categoria": "sale",
+        "reference_id": "ZFZ6U399K",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Casaquinho Curto Mar",
+        "categoria": "bomber",
+        "reference_id": "CR02-MAR",
+        "unit_price": 119.9
+    },
+    {
+        "name": "Legging com Bolso Flocos",
+        "categoria": "legging",
+        "reference_id": "LG03-FLOCOS",
+        "unit_price": 145.9
+    },
+    {
+        "name": "Bolsa Mar",
+        "categoria": "acessorios",
+        "reference_id": "BL01-MAR",
+        "unit_price": 109.9
+    },
+    {
+        "name": "Top Liberdade Brilho Tropical",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "TP04-BRILHOTRP",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Casaquinho Curto Samba",
+        "categoria": "bomber",
+        "reference_id": "CR02-SAMBA",
+        "unit_price": 105.0
+    },
+    {
+        "name": "Top Z106 Estrela do Mar",
+        "categoria": "sale",
+        "reference_id": "NGGWSFBDZ",
+        "unit_price": 58.9
+    },
+    {
+        "name": "Short Coladinho Bossa",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "SH01-BOSSA",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Short Coladinho Bossa",
+        "categoria": "short",
+        "reference_id": "SH01-BOSSA",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Shortinho com Bolso \u2060Mar",
+        "categoria": "short",
+        "reference_id": "SH06-MAR",
+        "unit_price": 94.9
+    },
+    {
+        "name": "Short Lim\u00e3o Verde Neon",
+        "categoria": "sale",
+        "reference_id": "WQN6FX4E9",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Top Aguenta Firme Brilho Tropical",
+        "categoria": "top",
+        "reference_id": "TP05-BRILHOTRP",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Top Liberdade Flores marinhas",
+        "categoria": "top",
+        "reference_id": "TP04-FLOR-HPKX9RW6K",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Top Glamour Tangerina",
+        "categoria": "top",
+        "reference_id": "TP06-TNG",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Hot Pant Mar",
+        "categoria": "surfwear",
+        "reference_id": "HT01-MAR",
+        "unit_price": 72.9
+    },
+    {
+        "name": "Short Coladinho Brilho do Mar",
+        "categoria": "short",
+        "reference_id": "V6RHH6SZF",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Legging Lisa - Brisa",
+        "categoria": "legging",
+        "reference_id": "LFQJV8TH3",
+        "unit_price": 134.9
+    },
+    {
+        "name": "Short Soltinho \u2060Uva",
+        "categoria": "short",
+        "reference_id": "SH02-UVA",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Top Alcinhas Divertidas Brilho do Mar",
+        "categoria": "colecao-luz-e-mar",
+        "reference_id": "C69CYEFGS",
+        "unit_price": 84.9
+    },
+    {
+        "name": "Legging Lisa - Estrela do mar",
+        "categoria": "legging",
+        "reference_id": "MJJLSJ86T",
+        "unit_price": 134.9
+    },
+    {
+        "name": "Casaquinho Curto C\u00e9u",
+        "categoria": "bomber",
+        "reference_id": "CR02-CEU",
+        "unit_price": 105.0
+    },
+    {
+        "name": "Casaquinho Curto Caipirinha",
+        "categoria": "bomber",
+        "reference_id": "CR02-CAIPIRINHA",
+        "unit_price": 105.0
+    },
+    {
+        "name": "Top Retr\u00f4 Rosa e Azul",
+        "categoria": "sale",
+        "reference_id": "SGUFR69XV",
+        "unit_price": 76.9
+    },
+    {
+        "name": "Shortinho com Bolso Brisa",
+        "categoria": "short",
+        "reference_id": "SH06-BRISA",
+        "unit_price": 94.9
+    },
+    {
+        "name": "Short Soltinho Samba",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "SH02-SAMBA",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Short Orqu\u00eddea Lil\u00e1s",
+        "categoria": "short",
+        "reference_id": "N5PB2K645",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Blus\u00e3o C\u00e9u de Tule",
+        "categoria": "cropped",
+        "reference_id": "BL02-CEU-TULE",
+        "unit_price": 109.9
+    },
+    {
+        "name": "Short Soltinho \u2060Chiclete",
+        "categoria": "short",
+        "reference_id": "SH02-CHCT",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Short Levinho Flores marinhas",
+        "categoria": "short",
+        "reference_id": "SH03-FLMAR-YCFL26R04",
+        "unit_price": 98.9
+    },
+    {
+        "name": "Short Levinho Brisa",
+        "categoria": "short",
+        "reference_id": "SH03-BRISA",
+        "unit_price": 98.9
+    },
+    {
+        "name": "Legging de Listrinhas Florescer",
+        "categoria": "sale",
+        "reference_id": "Y76JREWDC",
+        "unit_price": 134.9
+    },
+    {
+        "name": "Top Z106 Brilho Tropical com regulador de al\u00e7a",
+        "categoria": "top",
+        "reference_id": "TP01-BRILHOTRP",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Top Z106 \u2060Chiclete com Regulador de Al\u00e7a",
+        "categoria": "top",
+        "reference_id": "TP01-CHCT",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Top Liberdade Bossa",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "TP04-BOSSA",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Top Z106 \u2060Tapioca com Regulador de Al\u00e7a",
+        "categoria": "top",
+        "reference_id": "TP01-TAPIOCA",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Top Z106 Mar com regulador de al\u00e7a",
+        "categoria": "top",
+        "reference_id": "TP01-MAR",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Top Aguenta Firme Samba",
+        "categoria": "top",
+        "reference_id": "TP05-SAMBA",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Top Alcinhas Divertidas Buzios",
+        "categoria": "top",
+        "reference_id": "NWMZM5WEX",
+        "unit_price": 84.9
+    },
+    {
+        "name": "Top Aguenta Firme \u2060Castanha",
+        "categoria": "colecao-equilibrio",
+        "reference_id": "TP05-CAST",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Short Levinho Caipirinha",
+        "categoria": "short",
+        "reference_id": "SH03-CAIPNH",
+        "unit_price": 98.9
+    },
+    {
+        "name": "Short Coladinho \u2060Tangerina",
+        "categoria": "short",
+        "reference_id": "SH01-TNG",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Top Retr\u00f4 Ceuzinho",
+        "categoria": "sale",
+        "reference_id": "HD6XAR6K7",
+        "unit_price": 76.9
+    },
+    {
+        "name": "Top Z106 Espumas do Mar",
+        "categoria": "top",
+        "reference_id": "6BQUDFPCG",
+        "unit_price": 58.9
+    },
+    {
+        "name": "Top Aguenta Firme Mandacaru",
+        "categoria": "top",
+        "reference_id": "TP05-MANDACARU",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Top Glamour \u2060Chiclete",
+        "categoria": "colecao-equilibrio",
+        "reference_id": "TP06-CHCT",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Short Soltinho \u2060Castanha",
+        "categoria": "short",
+        "reference_id": "SH02-CASTANHA",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Legging Lisa - Estrela do mar",
+        "categoria": "colecao-luz-e-mar",
+        "reference_id": "MJJLSJ86T",
+        "unit_price": 134.9
+    },
+    {
+        "name": "Legging Lisa Mandacaru",
+        "categoria": "legging",
+        "reference_id": "LG02-BRILHOTRP",
+        "unit_price": 134.9
+    },
+    {
+        "name": "Top Retr\u00f4 Rosa e Azul",
+        "categoria": "top",
+        "reference_id": "SGUFR69XV",
+        "unit_price": 76.9
+    },
+    {
+        "name": "Short Moderninho Mar",
+        "categoria": "short",
+        "reference_id": "SH04-MAR",
+        "unit_price": 112.9
+    },
+    {
+        "name": "Macaquinho Uva",
+        "categoria": "macaquinho",
+        "reference_id": "MC01-UVA",
+        "unit_price": 157.6
+    },
+    {
+        "name": "Blus\u00e3o C\u00e9u de Tule",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "BL02-CEU-TULE",
+        "unit_price": 109.9
+    },
+    {
+        "name": "Short Moderninho Caipirinha",
+        "categoria": "short",
+        "reference_id": "SH04-CAIPNH",
+        "unit_price": 112.9
+    },
+    {
+        "name": "Top Aguenta Firme Brilho Tropical",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "TP05-BRILHOTRP",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Top Liberdade \u2060Chiclete",
+        "categoria": "top",
+        "reference_id": "TP04-CHCT",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Top Liberdade \u2060Tangerina",
+        "categoria": "top",
+        "reference_id": "TP04-TNG",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Short de Listrinha Florescer",
+        "categoria": "sale",
+        "reference_id": "7Y4Z3LZ5E",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Ecobag Rosinha",
+        "categoria": "acessorios",
+        "reference_id": "P4GNFA69R",
+        "unit_price": 35.9
+    },
+    {
+        "name": "Short Soltinho Brisa",
+        "categoria": "short",
+        "reference_id": "CU5RFWN5C",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Top Alcinhas Divertidas Brisa + Costas Pretas",
+        "categoria": "colecao-luz-e-mar",
+        "reference_id": "GX5TVBUS5",
+        "unit_price": 84.9
+    },
+    {
+        "name": "Cropped C\u00e9u de Tule",
+        "categoria": "cropped",
+        "reference_id": "CR02-CEU-TULE",
+        "unit_price": 109.9
+    },
+    {
+        "name": "Top Aguenta Firme Caipirinha",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "TP05-CAIPNH",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Hot Pant Tangerina",
+        "categoria": "surfwear",
+        "reference_id": "HT01-TNG",
+        "unit_price": 72.9
+    },
+    {
+        "name": "Shortinho com Bolso \u2060Uva",
+        "categoria": "short",
+        "reference_id": "SH06-UVA",
+        "unit_price": 94.9
+    },
+    {
+        "name": "Top Aguenta Firme \u2060Pedacinho Do C\u00e9u",
+        "categoria": "top",
+        "reference_id": "TP05-PEDCEU",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Short de Listrinha Ceuzinho",
+        "categoria": "sale",
+        "reference_id": "D4VHANH5L",
+        "unit_price": 134.9
+    },
+    {
+        "name": "Hot Pant Chichete",
+        "categoria": "surfwear",
+        "reference_id": "HT01-CHCT",
+        "unit_price": 72.9
+    },
+    {
+        "name": "Short Coladinho Brisa",
+        "categoria": "short",
+        "reference_id": "PTXEFNHED",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Legging com Bolso \u2060Tangerina",
+        "categoria": "legging",
+        "reference_id": "LG03-TNG",
+        "unit_price": 145.9
+    },
+    {
+        "name": "Top Aguenta Firme Mar",
+        "categoria": "top",
+        "reference_id": "TP05-MAR",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Top Liberdade \u2060Mo\u00e7a Linda",
+        "categoria": "top",
+        "reference_id": "TP04-MOLND",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Legging de Listrinhas Marinho e Azul Claro",
+        "categoria": "legging",
+        "reference_id": "N5TSM8RS9",
+        "unit_price": 134.9
+    },
+    {
+        "name": "Top Liberdade C\u00e9u e Mar",
+        "categoria": "top",
+        "reference_id": "TP04-CEUMAR",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Top Aguenta Firme \u2060Castanha",
+        "categoria": "top",
+        "reference_id": "TP05-CAST",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Short Coladinho Estrela do Mar",
+        "categoria": "short",
+        "reference_id": "ENKME2N2W",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Hot Pant Uva",
+        "categoria": "surfwear",
+        "reference_id": "HT01-UVA",
+        "unit_price": 72.9
+    },
+    {
+        "name": "Blus\u00e3o C\u00e9u de Tule",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "BL02-CEU-TULE",
+        "unit_price": 109.9
+    },
+    {
+        "name": "Top Liberdade Flocos",
+        "categoria": "top",
+        "reference_id": "TP04-FLOCOS",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Short Soltinho Flocos",
+        "categoria": "short",
+        "reference_id": "SH02-FLOCOS",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Cropped \u2060Tapioca",
+        "categoria": "colecao-equilibrio",
+        "reference_id": "CR01-TAPI",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Short Coladinho Samba",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "SH01-SAMBA",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Blus\u00e3o Espumas do Mar de Tule",
+        "categoria": "cropped",
+        "reference_id": "BL02-ESPUMAS-TULE",
+        "unit_price": 58.9
+    },
+    {
+        "name": "Top Retr\u00f4 Marinho e Rosa",
+        "categoria": "sale",
+        "reference_id": "GNNBA9NCV",
+        "unit_price": 76.9
+    },
+    {
+        "name": "Short Levinho Mar",
+        "categoria": "colecao-equilibrio",
+        "reference_id": "TKKBUQHEK",
+        "unit_price": 98.9
+    },
+    {
+        "name": "Bolsa Pedacinho do C\u00e9u",
+        "categoria": "acessorios",
+        "reference_id": "BL01-PEDCEU",
+        "unit_price": 109.9
+    },
+    {
+        "name": "Short Soltinho \u2060Tangerina",
+        "categoria": "short",
+        "reference_id": "SH02-TNG",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Short Levinho Tangerina",
+        "categoria": "short",
+        "reference_id": "SH03-TNG",
+        "unit_price": 98.9
+    },
+    {
+        "name": "Regatinha Caipirinha",
+        "categoria": "cropped",
+        "reference_id": "RG01-CAIPIRINHA",
+        "unit_price": 78.0
+    },
+    {
+        "name": "Top Aguenta Firme Mandacaru",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "TP05-MANDACARU",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Legging de Listrinhas Amanhecer",
+        "categoria": "sale",
+        "reference_id": "GVSENJWHJ",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Short Coladinho Samba",
+        "categoria": "short",
+        "reference_id": "SH01-SAMBA",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Short Coladinho Brisa",
+        "categoria": "colecao-luz-e-mar",
+        "reference_id": "PTXEFNHED",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Short Soltinho Caipirinha",
+        "categoria": "short",
+        "reference_id": "SH02-CAIPNH",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Top Liberdade Caipirinha",
+        "categoria": "top",
+        "reference_id": "TP04-CAIPNH",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Legging de Listrinhas Ceuzinho",
+        "categoria": "sale",
+        "reference_id": "KA5CS94NS",
+        "unit_price": 134.9
+    },
+    {
+        "name": "Top Alcinhas Divertidas Brilho do Mar",
+        "categoria": "sale",
+        "reference_id": "C69CYEFGS",
+        "unit_price": 84.9
+    },
+    {
+        "name": "Short Coladinho Estrela do Mar",
+        "categoria": "colecao-luz-e-mar",
+        "reference_id": "ENKME2N2W",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Top Liberdade \u2060Tangerina",
+        "categoria": "colecao-equilibrio",
+        "reference_id": "TP04-TNG",
+        "unit_price": 65.9
+    },
+    {
+        "name": "Top Retr\u00f4 Florescer",
+        "categoria": "top",
+        "reference_id": "E5HKATFSS",
+        "unit_price": 76.9
+    },
+    {
+        "name": "Cropped Brisa de Tule",
+        "categoria": "cropped",
+        "reference_id": "CR02-BRISA-TULE",
+        "unit_price": 112.9
+    },
+    {
+        "name": "Legging Rosa Pink",
+        "categoria": "sale",
+        "reference_id": "RCXX4R95Y",
+        "unit_price": 94.9
+    },
+    {
+        "name": "Top Alcinhas Divertidas Estrela do Mar",
+        "categoria": "colecao-luz-e-mar",
+        "reference_id": "DM8LG5X2R",
+        "unit_price": 84.9
+    },
+    {
+        "name": "Short Soltinho Brilho do Mar",
+        "categoria": "short",
+        "reference_id": "25NNTR3ZY",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Casaquinho Mar",
+        "categoria": "top",
+        "reference_id": "7DQLADHRQ",
+        "unit_price": 119.9
+    },
+    {
+        "name": "Blus\u00e3o C\u00e9u de Tule",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "BL02-CEU-TULE",
+        "unit_price": 109.9
+    },
+    {
+        "name": "Top Z106 \u2060Uva com Regulador de Al\u00e7a",
+        "categoria": "top",
+        "reference_id": "TP01-UVA",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Macaquinho \u2060Tangerina",
+        "categoria": "colecao-equilibrio",
+        "reference_id": "MC01-TNG",
+        "unit_price": 157.6
+    },
+    {
+        "name": "Short Moderninho Mar",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "SH04-MAR",
+        "unit_price": 112.9
+    },
+    {
+        "name": "Top Z106 \u2060Tapioca com Regulador de Al\u00e7a",
+        "categoria": "colecao-equilibrio",
+        "reference_id": "TP01-TAPIOCA",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Top Glamour Tangerina",
+        "categoria": "colecao-equilibrio",
+        "reference_id": "TP06-TNG",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Hot Pant Brisa",
+        "categoria": "surfwear",
+        "reference_id": "HT01-BRISA",
+        "unit_price": 72.9
+    },
+    {
+        "name": "Legging de Listrinhas Marinho e Azul Claro",
+        "categoria": "sale",
+        "reference_id": "N5TSM8RS9",
+        "unit_price": 134.9
+    },
+    {
+        "name": "Cropped Flocos",
+        "categoria": "cropped",
+        "reference_id": "CR01-FLOCOS",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Top Alcinhas Divertidas Fundo do Mar",
+        "categoria": "sale",
+        "reference_id": "4UUYCHJDM",
+        "unit_price": 84.9
+    },
+    {
+        "name": "Short Soltinho Brilho do Mar",
+        "categoria": "colecao-luz-e-mar",
+        "reference_id": "25NNTR3ZY",
+        "unit_price": 108.9
+    },
+    {
+        "name": "Cropped \u2060Tapioca",
+        "categoria": "cropped",
+        "reference_id": "CR01-TAPI",
+        "unit_price": 78.9
+    },
+    {
+        "name": "Top Z106 Caipirinha com regulador de al\u00e7a",
+        "categoria": "top",
+        "reference_id": "TP01-CAIPNH",
+        "unit_price": 62.9
+    },
+    {
+        "name": "Legging Ant\u00fario Vinho",
+        "categoria": "legging",
+        "reference_id": "7H3RJH2NC",
+        "unit_price": 134.9
+    },
+    {
+        "name": "Short Coladinho \u2060Uva",
+        "categoria": "short",
+        "reference_id": "SH01-UVA",
+        "unit_price": 89.9
+    },
+    {
+        "name": "Cropped C\u00e9u de Tule",
+        "categoria": "colecao-brasilidades",
+        "reference_id": "CR02-CEU-TULE",
+        "unit_price": 109.9
+    },
+    {
+        "name": "Cropped C\u00e9u",
+        "categoria": "cropped",
+        "reference_id": "CR01-CEU",
+        "unit_price": 109.9
+    }
+]
