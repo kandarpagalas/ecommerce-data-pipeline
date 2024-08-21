@@ -3,3 +3,4 @@ watchdog
 pendulum
 Faker
 python-dotenv
+kafka-python
