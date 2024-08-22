@@ -1,3 +1,4 @@
+import os
 import random
 import json
 import pendulum
@@ -5,10 +6,18 @@ from time import sleep
 from kafka import KafkaProducer
 from src.helpers.gen_order import OrderGen
 
+# Modificador personalisado do load_dotenv
+from src.helpers.setup import load_env
+
+load_env()
+
 
 class OrderProducer:
-    def __init__(self, kafka_server="10.0.0.15:9092") -> None:
-        self.kafka_server = kafka_server
+    def __init__(self, kafka_server=None) -> None:
+        self.kafka_server = kafka_server or os.environ.get(
+            "KAFKA_SERVER", "localhost:9092"
+        )
+
         self.order_generator = OrderGen()
 
     def _producer(self):
@@ -26,8 +35,7 @@ class OrderProducer:
             producer.close()
             return {"conn": status, "message": "BrokersAvailable"}
         except Exception as e:
-            print(e)
-            return {"conn": False, "message": e}
+            return {"conn": False, "message": e.__class__.__name__}
 
     def send_order(self, topic="orders"):
         payload = self.order_generator.generate(pendulum.now("America/Fortaleza"))
@@ -48,5 +56,14 @@ class OrderProducer:
 
 
 if __name__ == "__main__":
-    order_producer = OrderProducer()
-    order_producer.send_order()
+    print("LOCAL:")
+    producer1 = OrderProducer()
+    print(" - Broker:", producer1.kafka_server)
+    print(" - Response:", producer1.get_status())
+
+    producer3 = OrderProducer(kafka_server="10.0.0.15:9092")
+    print()
+    print("REMOTE:")
+    print(" - Broker:", producer3.kafka_server)
+    print(" - Response:", producer3.get_status())
+    # order_producer.send_order()

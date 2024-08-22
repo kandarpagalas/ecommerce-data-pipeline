@@ -8,6 +8,10 @@ from streamlit import session_state as ss
 from src.helpers.gen_order import OrderGen
 from src.helpers.kafka.producer import OrderProducer
 
+from src.helpers.setup import load_env
+
+load_env()
+
 st.set_page_config(
     page_title="Kafka Producer",
     page_icon="✉️",
@@ -55,7 +59,7 @@ with st.sidebar:
 
     ss.bootstrap_servers = st.selectbox(
         label="SERVER",
-        options=("10.0.0.15:9092", "kafka.z106.kandarpagalas.com"),
+        options=("localhost:9092", "10.0.0.15:9092"),
         index=0,
     )
     status = kafka_is_up()
