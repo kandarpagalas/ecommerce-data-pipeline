@@ -23,8 +23,8 @@ Este projeto tem o objetivo de fornecer um ambiente de experimentação com pipe
 ![Ecommerce Data Architecture](src/diagrams/ecommerce-data-pipeline-arch.png)
 
 ### Idealizadores do projeto
-<!-- * [Érica Monteiro]()
-* [Felipe Soares]() -->
+<!-- * [Érica Monteiro]()-->
+* [Felipe Soares](https://github.com/felipesoaresdev/)
 * [Kandarpa Galas](https://github.com/kandarpagalas/) 
 <!-- * [Winiston Freitas]() -->
 
