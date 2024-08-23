@@ -3,6 +3,7 @@ from src.helpers.setup import load_env
 
 load_env()
 
+st.set_page_config(layout="wide")
 readme = st.Page(
     title="Readme",
     icon=":material/info:",
@@ -16,10 +17,16 @@ consumer = st.Page(
 producer = st.Page(
     title="Kafka Producer",
     icon=":material/publish:",
-    page="kafka_orders_producer_gui.py",
+    page="src/pages/kafka_orders_producer_gui.py",
+)
+
+products = st.Page(
+    title="Produtos",
+    icon=":material/inventory:",
+    page="src/pages/products.py",
 )
 
 pg = st.navigation(
-    {"SOBRE": [readme], "ANÁLISES": [], "INFRAESTRUTURA": [consumer, producer]}
+    {"SOBRE": [readme], "ANÁLISES": [products], "INFRAESTRUTURA": [consumer, producer]}
 )
 pg.run()
