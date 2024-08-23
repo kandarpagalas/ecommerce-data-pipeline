@@ -4,3 +4,5 @@ pendulum
 Faker
 python-dotenv
 kafka-python
+pyspark
+findspark
