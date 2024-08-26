@@ -8,18 +8,7 @@ from streamlit import session_state as ss
 from src.helpers.gen_order import OrderGen
 from src.helpers.kafka.producer import OrderProducer
 
-from src.helpers.setup import load_env
-
-load_env()
-
-st.set_page_config(
-    page_title="Kafka Producer",
-    page_icon="✉️",
-    initial_sidebar_state="expanded",
-    layout="wide",
-)
-st.title("ORDER GENERATOR")
-# st.subheader("Kafka Producer")
+st.title("KAFKA PRODUCER")
 
 order_generator = OrderGen()
 
@@ -53,7 +42,6 @@ def real_time_orders(stream=True, min_interval=1, max_interval=5):
 
 
 with st.sidebar:
-    st.title("KAFKA ORDER PRODUCER")
     st.subheader("Settings")
     col1, col2 = st.columns([3, 1])
 
@@ -86,7 +74,6 @@ with st.sidebar:
     ss.streaming = st.toggle(value=False, label="Produce ORDERS")
 
 if ss.streaming:
-    # st.header("ORDERS")
     for order in real_time_orders(
         stream=ss.streaming, min_interval=min_interval, max_interval=max_interval
     ):

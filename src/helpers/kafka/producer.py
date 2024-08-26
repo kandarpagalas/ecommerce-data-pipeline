@@ -44,6 +44,7 @@ class OrderProducer:
         producer = self._producer()
 
         producer.send(topic, value=payload)
+        producer.flush()
 
         # print("ENVIADO:")
         # print("- topic:", topic)
