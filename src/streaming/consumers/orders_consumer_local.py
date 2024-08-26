@@ -11,34 +11,40 @@ from pyspark.sql.types import (
     ArrayType,
 )
 
+# Kafka
 KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "10.0.0.15:9092")
+KAFKA_TOPIC = os.getenv("KAFKA_TOPIC", "orders")
+
+# Spark
+SPARK_AWAIT_TERMINATION = os.getenv("SPARK_AWAIT_TERMINATION", "60")
+
+# Local
+# Define o caminho para o arquivo de saída
+OUTPUT_LOCATION = os.getenv("OUTPUT_LOCATION", "/content/output/parquet")
+CHECKPOINT_LOCATION = os.getenv("CHECKPOINT_LOCATION", "/content/checkpoint")
+
 
 # Criar a SparkSession com o conector Kafka
 spark = (
-    SparkSession.builder.appName("Kafka Streaming Demo")
+    SparkSession.builder.appName("Kafka ORDERS Streaming")
     .master("local[*]")
     .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2")
     .getOrCreate()
 )
 
+
 # Set Spark log level to WARN
 spark.sparkContext.setLogLevel("WARN")
 
-topic = "orders"
+TOPIC = "orders"
 
 # Ler os dados do Kafka
 kafka_stream_df = (
     spark.readStream.format("kafka")
     .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS)
-    .option("subscribe", topic)
+    .option("subscribe", KAFKA_TOPIC)
     .load()
 )
-
-print("\n\n\n\nSTART -------------------------------------------\n")
-print("INPUT SCHEMA:")
-kafka_stream_df.printSchema()
-print("\nEND -------------------------------------------\n\n\n\n")
-
 
 schema = StructType(
     [
@@ -208,36 +214,25 @@ parsed_df = json_df.select(from_json(col("value"), schema).alias("data")).select
     "data.*"
 )
 
-
-# Define o caminho para o arquivo de saída
-output_path = "/content/output"
-checkpointLocation = "/content/checkpoint"
-
-# Write Data to JSON
-# query = (
-#     parsed_df.writeStream.outputMode("append")
-#     .format("json")
-#     .option("failOnDataLoss", "false")
-#     .option("checkpointLocation", checkpointLocation)
-#     .option("path", output_path)
-#     .start()
-# )
-
+# Define / filtra os dados que serão salvos
 shipping = parsed_df.select("shipping.*")
+
 
 # Write Data to parquet
 query = (
     shipping.writeStream.outputMode("append")
     .format("parquet")
     .option("failOnDataLoss", "false")
-    .option("checkpointLocation", checkpointLocation)
-    .option("path", output_path)
+    .option("checkpointLocation", CHECKPOINT_LOCATION)
+    .option("path", OUTPUT_LOCATION)
     .start()
 )
 
 
 # Esperar alguns segundos para gerar dados
-query.awaitTermination(40)  # Ajuste o tempo conforme necessário
+query.awaitTermination(int(SPARK_AWAIT_TERMINATION))
 
-
-# docker exec -it spark_worker spark-submit --packages org.apache.hadoop:hadoop-aws:3.3.2 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 /consumer/orders_consumer.py
+# SUBMIT COMMAND
+# docker exec -it spark_worker spark-submit \
+#   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 \
+#   /consumer/orders_consumer_local.py
