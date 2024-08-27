@@ -62,5 +62,13 @@ services:
     volumes: 
       - ./data/redis/data:/data
 
-
-
+  minioserver:
+      image: minio/minio
+      ports:
+        - 9000:9000
+        - 9001:9001
+      environment:
+        MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+        MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+      container_name: minioserver
+      command: server /data --console-address ":9001"
