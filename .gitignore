@@ -4,4 +4,7 @@ __pycache__
 .env
 src/data/orders
 src/data/content
+src/data/volumes
 src/infra/data
+src/helpers/data/pagseguro/compra_credito.json
+src/helpers/data/pagseguro/compra_pix.json

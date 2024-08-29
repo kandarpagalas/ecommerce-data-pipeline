@@ -11,19 +11,29 @@ from pyspark.sql.types import (
     ArrayType,
 )
 
+CONSUMER_NAME = "consumer_local"
 # Kafka
-KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "10.0.0.15:9092")
+KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
 KAFKA_TOPIC = os.getenv("KAFKA_TOPIC", "orders")
+
+KAFKA_BOOTSTRAP_SERVERS = "kafka:9092"
 
 # Spark
 SPARK_AWAIT_TERMINATION = os.getenv("SPARK_AWAIT_TERMINATION", "60")
 
 # Local
 # Define o caminho para o arquivo de saída
-OUTPUT_LOCATION = os.getenv("OUTPUT_LOCATION", "/content/output/parquet")
-CHECKPOINT_LOCATION = os.getenv("CHECKPOINT_LOCATION", "/content/checkpoint")
+SPARK_OUTPUT_LOCATION = os.getenv("OUTPUT_LOCATION", "/content/output/parquet")
+SPARK_CHECKPOINT_LOCATION = os.getenv("CHECKPOINT_LOCATION", "/content/checkpoint")
+SPARK_DATA_LOCATION = os.getenv("SPARK_DATA_LOCATION", "/content")
 
 
+print("\n\n\n\n\n\n - - - - - - - - - - - - - - - - - - - - - ")
+print(KAFKA_BOOTSTRAP_SERVERS)
+print(KAFKA_TOPIC)
+print(SPARK_AWAIT_TERMINATION)
+print(SPARK_DATA_LOCATION)
+print(" - - - - - - - - - - - - - - - - - - - - - \n\n\n\n\n\n")
 # Criar a SparkSession com o conector Kafka
 spark = (
     SparkSession.builder.appName("Kafka ORDERS Streaming")
@@ -36,11 +46,11 @@ spark = (
 # Set Spark log level to WARN
 spark.sparkContext.setLogLevel("WARN")
 
-TOPIC = "orders"
 
 # Ler os dados do Kafka
 kafka_stream_df = (
     spark.readStream.format("kafka")
+    .option("failOnDataLoss", "false")
     .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS)
     .option("subscribe", KAFKA_TOPIC)
     .load()
@@ -223,8 +233,8 @@ query = (
     shipping.writeStream.outputMode("append")
     .format("parquet")
     .option("failOnDataLoss", "false")
-    .option("checkpointLocation", CHECKPOINT_LOCATION)
-    .option("path", OUTPUT_LOCATION)
+    .option("checkpointLocation", f"{SPARK_DATA_LOCATION}/{CONSUMER_NAME}/checkpoint")
+    .option("path", f"{SPARK_DATA_LOCATION}/{CONSUMER_NAME}/data")
     .start()
 )
 

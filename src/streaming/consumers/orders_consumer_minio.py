@@ -1,5 +1,4 @@
 import os
-from time import sleep
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, from_json
 from pyspark.sql.types import (
@@ -11,24 +10,23 @@ from pyspark.sql.types import (
     ArrayType,
 )
 
+CONSUMER_NAME = "consumer_minio"
+
 # Kafka
-KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "10.0.0.15:9092")
+KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
 KAFKA_TOPIC = os.getenv("KAFKA_TOPIC", "orders")
 
 # Spark
 SPARK_AWAIT_TERMINATION = os.getenv("SPARK_AWAIT_TERMINATION", "60")
 
 # Minio
-MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "http://10.0.0.15:9000")
+MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "http://minioserver:9000")
 MINIO_ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY", "78HevFfBbcX3fL2RbqYm")
 MINIO_SECRET_KEY = os.getenv(
     "MINIO_SECRET_KEY", "DS5UZ2DTtwMAoRDCPnYlufktSfgydPVrgW1rDDQ0"
 )
 # Remote
-# Define o caminho para o arquivo de saída
-OUTPUT_LOCATION = os.getenv("OUTPUT_LOCATION", "s3a://z106/output/parquet")
-CHECKPOINT_LOCATION = os.getenv("CHECKPOINT_LOCATION", "s3a://z106/checkpoint")
-
+SPARK_DATA_LOCATION = os.getenv("SPARK_DATA_LOCATION", "s3a://z106/")
 
 # Initialize SparkSession
 spark = (
@@ -228,8 +226,8 @@ shipping = parsed_df.select("shipping.*")
 query = (
     parsed_df.writeStream.outputMode("append")
     .format("parquet")
-    .option("checkpointLocation", CHECKPOINT_LOCATION)
-    .option("path", OUTPUT_LOCATION)
+    .option("checkpointLocation", f"{SPARK_DATA_LOCATION}/{CONSUMER_NAME}/checkpoint")
+    .option("path", f"{SPARK_DATA_LOCATION}/{CONSUMER_NAME}/data")
     .start()
 )
 

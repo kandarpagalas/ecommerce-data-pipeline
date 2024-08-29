@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import plotly.express as px
 
@@ -10,7 +11,7 @@ st.title("PRODUTOS")
 
 @st.cache_data
 def get_parquet_sample(parquet_file_path, num_rows=5):
-    spark = init_spark()
+    spark = init_spark(remote="spark://spark:7077")
     df = spark.read.parquet(parquet_file_path)
 
     if num_rows is None:
