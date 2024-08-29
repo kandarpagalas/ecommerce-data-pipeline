@@ -72,7 +72,7 @@ if __name__ == "__main__":
     max_customers = 50
     customers = [gen_customer(fake = fake) for _ in range(max_customers)]
 
-    with open("src/data/customers.json", "w", encoding="utf-8") as f:
+    with open("data/datasets/customers.json", "w", encoding="utf-8") as f:
         f.write(json.dumps(customers, indent=4))
 
     # print(len(customers))

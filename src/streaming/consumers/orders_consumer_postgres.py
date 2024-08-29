@@ -23,7 +23,7 @@ SPARK_AWAIT_TERMINATION = os.getenv("SPARK_AWAIT_TERMINATION", "60")
 # Postgres
 POSTGRES_DB = os.getenv("POSTGRES_DB", "z106")
 POSTGRES_USER = os.getenv("POSTGRES_USER", "postgres")
-POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "PosUniforPass")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "z106pass")
 POSTGRES_DATABASE_ENDPOINT = os.getenv(
     "POSTGRES_DATABASE_ENDPOINT", "postgres_z106:5432"
 )
@@ -265,5 +265,5 @@ query.awaitTermination(int(SPARK_AWAIT_TERMINATION))
 # SUBMIT COMMAND
 # docker exec -it spark_worker spark-submit \
 #   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 \
-#   --jars /content/jars/postgresql-42.7.4.jar \
+#   --jars /jars/postgresql-42.7.4.jar \
 #   /consumer/orders_consumer_postgres.py
