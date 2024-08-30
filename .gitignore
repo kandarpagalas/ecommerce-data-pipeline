@@ -2,6 +2,9 @@ venv
 .DS_Store
 __pycache__
 .env
-src/data/orders
-src/data/content
-src/infra/data
+data/datasets/orders
+data/content
+data/volumes
+infra/data
+helpers/data/pagseguro/compra_credito.json
+helpers/data/pagseguro/compra_pix.json

@@ -11,8 +11,10 @@ from pyspark.sql.types import (
     ArrayType,
 )
 
+CONSUMER_NAME = "consumer_minio"
+
 # Kafka
-KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "10.0.0.15:9092")
+KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
 KAFKA_TOPIC = os.getenv("KAFKA_TOPIC", "orders")
 
 # Spark
@@ -20,9 +22,12 @@ SPARK_AWAIT_TERMINATION = os.getenv("SPARK_AWAIT_TERMINATION", "60")
 
 # Postgres
 POSTGRES_DB = os.getenv("POSTGRES_DB", "z106")
-POSTGRES_USER = os.getenv("POSTGRES_PASSWORD", "postgres")
-POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "PosUniforPass")
-POSTGRES_DATABASE_ENDPOINT = os.getenv("POSTGRES_DATABASE_ENDPOINT", "10.0.0.15:35432")
+POSTGRES_USER = os.getenv("POSTGRES_USER", "postgres")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "z106pass")
+POSTGRES_DATABASE_ENDPOINT = os.getenv(
+    "POSTGRES_DATABASE_ENDPOINT", "postgres_z106:5432"
+)
+
 
 # Criar a SparkSession com o conector Kafka
 spark = (
@@ -260,5 +265,5 @@ query.awaitTermination(int(SPARK_AWAIT_TERMINATION))
 # SUBMIT COMMAND
 # docker exec -it spark_worker spark-submit \
 #   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 \
-#   --jars /content/jars/postgresql-42.7.4.jar \
+#   --jars /jars/postgresql-42.7.4.jar \
 #   /consumer/orders_consumer_postgres.py
