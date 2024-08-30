@@ -20,13 +20,17 @@ producer = st.Page(
     page="src/pages/kafka_orders_producer_gui.py",
 )
 
-products = st.Page(
-    title="Produtos",
+spark_basics = st.Page(
+    title="Leitura",
     icon=":material/inventory:",
-    page="src/pages/products.py",
+    page="src/pages/spark_basics.py",
 )
 
 pg = st.navigation(
-    {"SOBRE": [readme], "ANÁLISES": [products], "INFRAESTRUTURA": [consumer, producer]}
+    {
+        "SOBRE": [readme],
+        "SPARK": [spark_basics],
+        "INFRAESTRUTURA": [consumer, producer],
+    }
 )
 pg.run()

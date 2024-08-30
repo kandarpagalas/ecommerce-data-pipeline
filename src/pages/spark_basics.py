@@ -1,8 +1,5 @@
 import os
 import streamlit as st
-import plotly.express as px
-import pyspark
-from pyspark.sql import SparkSession
 
 from src.helpers.spark import init_spark
 import pyspark.sql.functions as f
@@ -63,39 +60,7 @@ local_df = get_parquet_sample(local_files)
 with st.expander("Arquivos locais"):
     st.dataframe(data=local_df, use_container_width=True, hide_index=True)
 
-s3_files = "s3a://z106/consumer_minio/data/*.parquet"
+s3_files = "s3a://z106/consumer_shipping/data/*.parquet"
 s3_df = get_parquet_sample(s3_files)
-with st.expander("Arquivos locais"):
+with st.expander("Arquivos MinIO"):
     st.dataframe(data=s3_df, use_container_width=True, hide_index=True)
-
-
-# st.header("Categoria")
-# col1, col2 = st.columns(2)
-# with col1:
-#     st.header("Quantidade")
-#     st.bar_chart(
-#         data=sample_df[["categoria", "quantidade"]],
-#         x="categoria",
-#         x_label="Categoria",
-#         y="quantidade",
-#         y_label="Quantidade",
-#     )
-# with col2:
-#     st.header("Preço médio")
-#     st.bar_chart(
-#         data=sample_df[["categoria", "preco_medio"]],
-#         x="categoria",
-#         x_label="Categoria",
-#         y="preco_medio",
-#         y_label="Preço Médio",
-#         stack=False,
-#     )
-# fig = px.bar(
-#     sample_df[["categoria", "preco_medio"]],
-#     x="categoria",
-#     y="preco_medio",
-#     title="Long-Form Input",
-#     labels={"preco_medio": "Preço Médio"},
-# )
-
-# st.plotly_chart(fig, use_container_width=True)
