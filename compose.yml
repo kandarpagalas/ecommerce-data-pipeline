@@ -55,6 +55,7 @@ services:
       - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
       - SPARK_SSL_ENABLED=no
       - SPARK_USER=spark
+      # - PYSPARK_SUBMIT_ARGS="--packages com.amazonaws:aws-java-sdk:2.23.19,org.apache.hadoop:hadoop-aws:3.4.0 pyspark-shell"
     ports:
       - '18080:8080' # GUI
       - '7077:7077' # API
@@ -81,6 +82,7 @@ services:
       - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
       - SPARK_SSL_ENABLED=no
       - SPARK_USER=spark
+      # - PYSPARK_SUBMIT_ARGS="--packages com.amazonaws:aws-java-sdk:2.23.19,org.apache.hadoop:hadoop-aws:3.4.0 pyspark-shell"
     volumes:
       - ./data/volumes/spark/content:/content
       - ./data/volumes/spark/jars:/jars
@@ -137,13 +139,14 @@ services:
       context: .  # This should be the root directory of your project
       dockerfile: docker/streamlit-spark/Dockerfile  # Path to your Dockerfile
     image: streamlit/spark  # Name the image "my_image"
+    # image: apache/spark-py:v3.4.0
     container_name: painel
     networks:
       - z106-net
     ports:
       - 8501:8501
     volumes:
-      - ./:/app
+      - ./:/opt/bitnami/streamlit
     env_file:
       - .env
     environment:
