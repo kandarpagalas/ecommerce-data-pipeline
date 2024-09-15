@@ -34,6 +34,4 @@ query = (
 query.awaitTermination(int(SPARK_AWAIT_TERMINATION))
 
 # SUBMIT COMMAND
-# docker exec -it spark_worker spark-submit \
-#   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 \
-#   /consumer/orders_consumer_local.py
+#docker exec -it spark_worker spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0  /consumer/orders_consumer_local.py
