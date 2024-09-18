@@ -42,7 +42,7 @@ services:
       KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
 
   spark:
-    image: bitnami/spark:3.5.1
+    image: bitnami/spark:3.5.2
     container_name: spark_master
     networks:
       - z106-net
@@ -66,7 +66,7 @@ services:
       # - /var/run/docker.sock:/var/run/docker.sock
 
   spark_worker:
-    image: bitnami/spark:3.5.1
+    image: bitnami/spark:3.5.2
     container_name: spark_worker
     networks:
       - z106-net
@@ -75,8 +75,8 @@ services:
     environment:
       - SPARK_MODE=worker
       - SPARK_MASTER_URL=spark://spark:7077
-      # - SPARK_WORKER_MEMORY=3G      #<--- adjust accordingly
-      # - SPARK_WORKER_CORES=1
+      - SPARK_WORKER_MEMORY=4G      #<--- adjust accordingly
+      - SPARK_WORKER_CORES=2
       - SPARK_RPC_AUTHENTICATION_ENABLED=no
       - SPARK_RPC_ENCRYPTION_ENABLED=no
       - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
@@ -175,3 +175,93 @@ services:
       # LIMIT_NUM_ORDERS: 100 # Limita a quandidade de vendas produzidas
       PRODUCER_MAX_INTERVAL: 5 # Limita o intervalo entre vendas
     command: ["python3", "src/streaming/producers/orders_producers.py"]
+
+  databricks:
+    build:
+      context: ./docker/jupyter-lab
+      dockerfile: ./Dockerfile
+    container_name: databricks
+    networks:
+      - z106-net
+    env_file:
+      - .env
+    ports:
+      - "8890:8888"
+    volumes:
+      - ./data/volumes/notebook/content:/home/jovyan/work
+      - ./data/datasets:/home/jovyan/datasets
+      - ./data/volumes/spark/jars:/home/jovyan/jars
+
+    environment:
+      # JUPYTER
+      # Use this to define a custom token
+      JUPYTER_TOKEN: 1234
+
+
+
+
+  # Spark nodes
+
+
+  # worker1:
+  #   image: bitnami/spark:3.5.2
+  #   networks:
+  #     - z106-net
+  #   env_file:
+  #     - .env
+  #   environment:
+  #     - SPARK_MODE=worker
+  #     - SPARK_MASTER_URL=spark://spark:7077
+  #     - SPARK_WORKER_MEMORY=4G      #<--- adjust accordingly
+  #     - SPARK_WORKER_CORES=2
+  #     - SPARK_RPC_AUTHENTICATION_ENABLED=no
+  #     - SPARK_RPC_ENCRYPTION_ENABLED=no
+  #     - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+  #     - SPARK_SSL_ENABLED=no
+  #     - SPARK_USER=spark
+  #   volumes:
+  #     - ./data/volumes/spark/content:/content
+  #     - ./data/volumes/spark/jars:/jars
+  #     - ./src/streaming/consumers:/consumer
+
+  # worker2:
+  #   image: bitnami/spark:3.5.2
+  #   networks:
+  #     - z106-net
+  #   env_file:
+  #     - .env
+  #   environment:
+  #     - SPARK_MODE=worker
+  #     - SPARK_MASTER_URL=spark://spark:7077
+  #     - SPARK_WORKER_MEMORY=4G      #<--- adjust accordingly
+  #     - SPARK_WORKER_CORES=2
+  #     - SPARK_RPC_AUTHENTICATION_ENABLED=no
+  #     - SPARK_RPC_ENCRYPTION_ENABLED=no
+  #     - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+  #     - SPARK_SSL_ENABLED=no
+  #     - SPARK_USER=spark
+  #   volumes:
+  #     - ./data/volumes/spark/content:/content
+  #     - ./data/volumes/spark/jars:/jars
+  #     - ./src/streaming/consumers:/consumer
+
+  # worker3:
+    image: bitnami/spark:3.5.2
+    networks:
+      - z106-net
+    env_file:
+      - .env
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark:7077
+      - SPARK_WORKER_MEMORY=4G      #<--- adjust accordingly
+      - SPARK_WORKER_CORES=2
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+      - SPARK_USER=spark
+    volumes:
+      - ./data/volumes/spark/content:/content
+      - ./data/volumes/spark/jars:/jars
+      - ./src/streaming/consumers:/consumer
