@@ -28,6 +28,18 @@ CREATE TABLE IF NOT EXISTS orders (
     charges TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS ft_orders (
+	id VARCHAR(50) NOT NULL,
+	created_at TIMESTAMP WITH TIME ZONE NOT NULL,
+	shipping VARCHAR(50) NOT NULL,
+	customer VARCHAR(50) NOT NULL,
+	item_references VARCHAR(50) NOT NULL,
+	charges_created_at TIMESTAMP WITH TIME ZONE NOT NULL,
+	charges_paid_at TIMESTAMP WITH TIME ZONE NOT NULL,
+	charge_value numeric(10, 2) NOT NULL,
+	payment_method_type VARCHAR(50) NOT NULL
+);
+
 
 -- Insert into customers if the table is empty
 DO $$ 
@@ -46,5 +58,15 @@ BEGIN
         -- Load data from products.csv file into the orders table
         COPY products(name, categoria, reference_id, unit_price) 
         FROM '/src/products.csv' DELIMITER ',' CSV HEADER;
+    END IF;
+END $$;
+
+-- Insert into ft_orders if the table is empty
+DO $$ 
+BEGIN
+    IF (SELECT COUNT(*) FROM ft_orders) = 0 THEN
+        -- Load data from products.csv file into the orders table
+        COPY ft_orders(id, created_at, shipping, customer, item_references, charges_created_at, charges_paid_at, charge_value, payment_method_type) 
+        FROM '/src/ft_orders.csv' DELIMITER ',' CSV HEADER;
     END IF;
 END $$;
