@@ -176,11 +176,11 @@ services:
       PRODUCER_MAX_INTERVAL: 5 # Limita o intervalo entre vendas
     command: ["python3", "src/streaming/producers/orders_producers.py"]
 
-  databricks:
+  jupyter:
     build:
       context: ./docker/jupyter-lab
       dockerfile: ./Dockerfile
-    container_name: databricks
+    container_name: jupyter-minio-spark-notebook
     networks:
       - z106-net
     env_file:
@@ -246,22 +246,22 @@ services:
   #     - ./src/streaming/consumers:/consumer
 
   # worker3:
-    image: bitnami/spark:3.5.2
-    networks:
-      - z106-net
-    env_file:
-      - .env
-    environment:
-      - SPARK_MODE=worker
-      - SPARK_MASTER_URL=spark://spark:7077
-      - SPARK_WORKER_MEMORY=4G      #<--- adjust accordingly
-      - SPARK_WORKER_CORES=2
-      - SPARK_RPC_AUTHENTICATION_ENABLED=no
-      - SPARK_RPC_ENCRYPTION_ENABLED=no
-      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
-      - SPARK_SSL_ENABLED=no
-      - SPARK_USER=spark
-    volumes:
-      - ./data/volumes/spark/content:/content
-      - ./data/volumes/spark/jars:/jars
-      - ./src/streaming/consumers:/consumer
+    # image: bitnami/spark:3.5.2
+    # networks:
+    #   - z106-net
+    # env_file:
+    #   - .env
+    # environment:
+    #   - SPARK_MODE=worker
+    #   - SPARK_MASTER_URL=spark://spark:7077
+    #   - SPARK_WORKER_MEMORY=4G      #<--- adjust accordingly
+    #   - SPARK_WORKER_CORES=2
+    #   - SPARK_RPC_AUTHENTICATION_ENABLED=no
+    #   - SPARK_RPC_ENCRYPTION_ENABLED=no
+    #   - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+    #   - SPARK_SSL_ENABLED=no
+    #   - SPARK_USER=spark
+    # volumes:
+    #   - ./data/volumes/spark/content:/content
+    #   - ./data/volumes/spark/jars:/jars
+    #   - ./src/streaming/consumers:/consumer
