@@ -188,9 +188,8 @@ services:
     ports:
       - "8890:8888"
     volumes:
-      - ./data/volumes/notebook/content:/home/jovyan/work
+      - ./src/notebooks:/home/jovyan/work
       - ./data/datasets:/home/jovyan/datasets
-      - ./data/volumes/spark/jars:/home/jovyan/jars
 
     environment:
       # JUPYTER
