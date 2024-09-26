@@ -1,5 +1,6 @@
 import os
 import streamlit as st
+from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from pyspark.sql import SparkSession, functions as f
 
@@ -7,19 +8,30 @@ from pyspark.sql import SparkSession, functions as f
 from pyspark.sql.functions import explode, col, date_format
 from pyspark.sql.types import *
 
+load_dotenv(".env")
+
+DOCKER_CONTAINER = os.getenv("DOCKER_CONTAINER", "false")
+
 # Minio
-MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT_", "minioserver:9000")
-MINIO_ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY_", "embuuWvqBMTLPRnbYXxu")
+if DOCKER_CONTAINER == "true":
+    MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "minioserver:9000")
+else:
+    MINIO_ENDPOINT = "localhost:9000"
+
+MINIO_ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY", "embuuWvqBMTLPRnbYXxu")
 MINIO_SECRET_KEY = os.getenv(
     "MINIO_SECRET_KEY_", "ZApLkWzj71pCNrB0IBGvQ5s5a2x4AJ42XSFZxb39"
 )
 
 # Postgres
-POSTGRES_DB = os.getenv("POSTGRES_DB_", "z106")
-POSTGRES_USER = os.getenv("POSTGRES_USER_", "postgres")
-POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD_", "z106pass")
-# POSTGRES_HOST = os.getenv("POSTGRES_HOST_", "postgres_z106:5432")
-POSTGRES_HOST = os.getenv("POSTGRES_HOST_", "localhost:35432")
+if DOCKER_CONTAINER == "true":
+    POSTGRES_HOST = os.getenv("POSTGRES_HOST", "postgres_z106:5432")
+else:
+    POSTGRES_HOST = "localhost:35432"
+
+POSTGRES_DB = os.getenv("POSTGRES_DB", "z106")
+POSTGRES_USER = os.getenv("POSTGRES_USER", "postgres")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "z106pass")
 
 # Remote
 MINIO_BUCKET = os.getenv("MINIO_BUCKET", "z106")
@@ -53,7 +65,7 @@ def query_postgres(spark, query):
     return df
 
 
-@st.cache_resource()
+# @st.cache_resource()
 def get_customers_df(_spark):
     query = "SELECT * FROM customers"
     df_customers = query_postgres(_spark, query)
@@ -63,7 +75,7 @@ def get_customers_df(_spark):
     return df_customers
 
 
-@st.cache_resource()
+# @st.cache_resource()
 def get_products_df(_spark):
     query = "SELECT * FROM products"
     df_products = query_postgres(_spark, query)
@@ -106,6 +118,9 @@ def get_dates_df(spark):
 def get_fato_df(spark):
     query = "SELECT * FROM ft_orders"
     ft_orders_df = query_postgres(spark, query)
+    ft_orders_df = ft_orders_df.withColumn(
+        "year", f.year("charges_paid_at")
+    ).withColumn("month", f.month("charges_paid_at"))
 
     # Criando a dimensão de produtos
     ft_orders_df.createOrReplaceTempView("ft_orders")

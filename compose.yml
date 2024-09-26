@@ -152,6 +152,7 @@ services:
     env_file:
       - .env
     environment:
+      DOCKER_CONTAINER: true
       PRODUCER_MAX_INTERVAL: ""
     depends_on:
       - kafka

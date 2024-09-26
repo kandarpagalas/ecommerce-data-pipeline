@@ -42,7 +42,7 @@ dashboard_01 = st.Page(
 
 pg = st.navigation(
     {
-        # "SOBRE": [readme],
+        "SOBRE": [readme],
         "DASHBOARDS": [dashboard_01],
         # "SPARK": [spark_basics],
         # "PAINEL": [painel_vendas],
