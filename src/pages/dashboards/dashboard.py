@@ -122,7 +122,7 @@ def quantidade_pedidos_por_estado():
 
 
 # UPDATE DATA --------------------------------
-@st.fragment(run_every="1m")
+@st.fragment(run_every="10s")
 def update_data():
     ft_orders_df = get_fato_df(spark)
     orders_count = ft_orders_df.count()
@@ -143,6 +143,16 @@ def update_data():
 
         ss.ft_orders_count = orders_count
 
+        st.subheader("Métricas")
+        col1, col2, col3 = st.columns(3)
+        col1.metric("Total Clientes", ss.count_customers)
+        col2.metric("Total Produtos", ss.count_products)
+        col3.metric(
+            "Total Vendas",
+            ss.ft_orders_count,
+            ss.ft_orders_count - ss.ft_orders_last_count,
+        )
+
 
 update_data()
 # UPDATE DATA --------------------------------
@@ -150,13 +160,6 @@ update_data()
 
 # with st.expander("ft_orders_df", expanded=False):
 #     st.dataframe(ft_orders_df, hide_index=True, use_container_width=True)
-st.subheader("Métricas")
-col1, col2, col3 = st.columns(3)
-col1.metric("Total Clientes", ss.count_customers)
-col2.metric("Total Produtos", ss.count_products)
-col3.metric(
-    "Total Vendas", ss.ft_orders_count, ss.ft_orders_count - ss.ft_orders_last_count
-)
 
 
 st.subheader("Receita Total por Mês")
