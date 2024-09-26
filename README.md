@@ -14,13 +14,25 @@ Este projeto tem o objetivo de fornecer um ambiente de experimentação com pipe
 
 ### Tecnologias
 
-* PostgreSQL como banco de dados relacional
-* Apache Spark para processamento dos dados em stream e batch
-* Apache Kafka como mensageiro
-* Streamlit para criação de paineis
+
+1. **PostgreSQL**: Banco de dados relacional robusto e escalável com suporte a SQL padrão e transações ACID.
+
+2. **Apache Spark**: Framework de processamento distribuído para dados em batch e stream, com alta performance.
+
+3. **Apache Kafka**: Plataforma de streaming distribuída para transmissão e processamento de dados em tempo real.
+
+4. **Streamlit**: Biblioteca Python para criar dashboards e interfaces interativas de forma rápida e simples.
+
+5. **Minio**: Armazenamento de objetos compatível com S3, ideal para grandes volumes de dados não estruturados.
+
+6. **Docker**: Plataforma de contêinerização que facilita a criação, distribuição e execução de aplicações isoladas.
+
+
 
 ### Arquitetura
-![Ecommerce Data Architecture](src/diagrams/ecommerce-data-pipeline-arch_v2.png)
+![Ecommerce Data Architecture](src/diagrams/ecommerce-data-pipeline-arch_v3.jpeg)
+
+
 
 
 
@@ -33,7 +45,7 @@ Siga os passos abaixo para clonar o repositório, criar o ambiente virtual, inst
 Para começar, clone este repositório em sua máquina local usando o comando abaixo:
 
 ```bash
-git clone git@github.com:kandarpagalas/ecommerce-data-pipeline.git
+git clone git@github.com/kandarpagalas/ecommerce-data-pipeline.git
 ```
 
 ### 2. Instale as Bibliotecas Necessárias
@@ -76,7 +88,16 @@ Com o ambiente virtual ativado, instale todas as dependências necessárias:
 pip install -r .\requirements.txt
 ```
 
-### 6. Inicie os Serviços com Docker Compose
+### 6. Configure o Arquivo `.env`
+
+Antes de iniciar o projeto, certifique-se de que o arquivo `template.env` esteja corretamente configurado com as variáveis de ambiente necessárias e ter realizado a renomeação para `.env`. Este arquivo está localizado em:
+
+```bash
+C:\caminho do projeto\template.env
+```
+
+
+### 7. Inicie os Serviços com Docker Compose
 
 Utilize o Docker Compose para subir os serviços necessários. Substitua `\caminho_arquivo` pelo caminho do arquivo `docker-compose.yml` específico do projeto:
 
@@ -84,15 +105,15 @@ Utilize o Docker Compose para subir os serviços necessários. Substitua `\camin
 docker-compose -f \caminho_arquivo up -d
 ```
 
-### 7. Execute a Interface Gráfica do Streamlit
+### 8. Execute a Interface Gráfica do Streamlit
 
-Finalmente, execute a interface gráfica do Streamlit para produzir os pedidos:
+Finalmente, execute a interface gráfica do Streamlit para visualizar os dados:
 
 ```bash
 streamlit run \streamlit_app.py
 ```
 
-Esse conteúdo em formato Markdown pode ser diretamente inserido no arquivo README.md do seu projeto.
+
 
 ### Idealizador do projeto
 
@@ -100,8 +121,8 @@ Esse conteúdo em formato Markdown pode ser diretamente inserido no arquivo READ
 
 ### Contribuidores
 * [Felipe Soares](https://github.com/felipesoaresdev/)
-* [Winiston Freitas]()
-* [Érica Monteiro]()
+* [Winiston Freitas](https://github.com/winistonvf)
+
 
 ### Licença
 
