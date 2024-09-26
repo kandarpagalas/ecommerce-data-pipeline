@@ -70,8 +70,10 @@ def gen_payment_method(customer):
     return payment_methods["PIX"]
 
 
-def get_randon_customer():
-    with open("data/datasets/customers.json", "r", encoding="utf-8") as f:
+def get_randon_customer(customers_file=None):
+    if customers_file is None:
+        customers_file = "data/datasets/customers.json"
+    with open(customers_file, "r", encoding="utf-8") as f:
         data = f.read()
         customers = json.loads(data)
 
@@ -80,8 +82,11 @@ def get_randon_customer():
         return the_chosen_one
 
 
-def get_random_product():
-    with open("data/datasets/products.json", "r", encoding="utf-8") as f:
+def get_random_product(products_file=None):
+    if products_file is None:
+        products_file = "data/datasets/products.json"
+
+    with open(products_file, "r", encoding="utf-8") as f:
         data = f.read()
         products = json.loads(data)
 
@@ -91,7 +96,7 @@ def get_random_product():
         return the_chosen_one
 
 
-def gen_charge(customer, products, created_at, stream=False):
+def gen_charge(customer, products, created_at):
     paid_at = created_at.add(minutes=randint(0, 15), seconds=randint(5, 60))
 
     total_value = 0
@@ -121,8 +126,8 @@ class OrderGen:
     def __init__(self) -> None:
         pass
 
-    def generate(self, dt=None):
-        customer = get_randon_customer()
+    def generate(self, dt=None, customers_file=None, products_file=None):
+        customer = get_randon_customer(customers_file=customers_file)
 
         if dt is None:
             fake_dt = fake.date_between(
@@ -141,7 +146,10 @@ class OrderGen:
         address = customer["address"]
         del customer["address"]
 
-        items = [get_random_product() for _ in range(1, randint(2, 5))]
+        items = [
+            get_random_product(products_file=products_file)
+            for _ in range(1, randint(2, 5))
+        ]
 
         order = {
             "id": "ORDE_" + str(uuid.uuid4()),

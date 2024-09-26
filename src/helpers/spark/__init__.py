@@ -25,11 +25,12 @@ SPARK_DATA_LOCATION = os.getenv("SPARK_DATA_LOCATION", "s3a://z106/")
 
 
 # Initialize SparkSession
-def init_spark(remote=None):
+@st.cache_resource
+def init_spark(remote=None, app_name="spark_app"):
     master = "local[*]"
     master = "spark://a47aeaa501aa:7077"
     spark = (
-        SparkSession.builder.appName("Kafka ORDERS Streaming")
+        SparkSession.builder.appName(app_name)
         # .config("spark.master", master)
         .config("spark.hadoop.fs.s3a.endpoint", MINIO_ENDPOINT)
         .config("spark.hadoop.fs.s3a.access.key", MINIO_ACCESS_KEY)
@@ -38,6 +39,7 @@ def init_spark(remote=None):
         .config("spark.hadoop.fs.s3a.connection.ssl.enabled", "false")
         .config("spark.hadoop.fs.s3a.path.style.access", "true")
         # .config("fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
+        .config("spark.jars.packages", "org.postgresql:postgresql:42.7.4")
         .getOrCreate()
     )
     return spark

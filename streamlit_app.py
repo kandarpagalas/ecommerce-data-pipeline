@@ -26,11 +26,27 @@ spark_basics = st.Page(
     page="src/pages/spark_basics.py",
 )
 
+painel_vendas = st.Page(
+    title="Vendas RT",
+    icon=":material/monitoring:",
+    page="src/pages/painel_vendas/painel_vendas.py",
+)
+
+
+dashboard_01 = st.Page(
+    title="Dashboard",
+    icon=":material/monitoring:",
+    page="src/pages/dashboards/dashboard.py",
+)
+
+
 pg = st.navigation(
     {
-        "SOBRE": [readme],
-        "SPARK": [spark_basics],
-        "INFRAESTRUTURA": [consumer, producer],
+        # "SOBRE": [readme],
+        "DASHBOARDS": [dashboard_01],
+        # "SPARK": [spark_basics],
+        # "PAINEL": [painel_vendas],
+        "TESTE KAFKA": [consumer, producer],
     }
 )
 pg.run()
